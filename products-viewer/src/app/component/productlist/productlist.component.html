@@ -1,0 +1,33 @@
+<p-card>
+    <div class="search-panel">
+        <p-autoComplete [(ngModel)]= "selectedServiceTypeCode" (onSelect)= "filterBenefits($event)"  [suggestions]="filteredServiceTypeCodes" (completeMethod)="filterServiceTypeCode($event)" [dropdown]="true">
+            <ng-template let-filteredServiceTypeCode pTemplate="item">
+                <div class="country-item">
+                    <div>{{filteredServiceTypeCode}}</div>
+                </div>
+            </ng-template>
+        </p-autoComplete>
+    </div>
+    <p-accordion *ngFor="let benefit of filteredBenefits; let i=index;">               
+        <p-accordionTab  header="Benefit {{i+1}}" [selected]="false">       
+            <p-table [value]="benefit.products">
+                <ng-template pTemplate="header">
+                    <tr>
+                        <th>Name</th>
+                        <th>Current</th>
+                        <th>Enriched</th>
+                        <th>Type Of Change</th>
+                    </tr>
+                </ng-template>
+                <ng-template pTemplate="body" let-product>
+                    <tr>
+                        <td>{{product.name}}</td>
+                        <td>{{product.current}}</td>
+                        <td>{{product.enriched}}</td>
+                        <td>{{product.typeOfChange}}</td>
+                    </tr>
+                </ng-template>
+            </p-table> 
+        </p-accordionTab>
+    </p-accordion>
+</p-card>

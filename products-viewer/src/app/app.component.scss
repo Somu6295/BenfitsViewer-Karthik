@@ -1,0 +1,13 @@
+.app-main {
+    display: flex;
+    flex-direction: column;
+}
+.app-main .page-title {
+    padding: 0px 5px 0px 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.app-main .page-header {
+    margin-bottom: 5px;
+}

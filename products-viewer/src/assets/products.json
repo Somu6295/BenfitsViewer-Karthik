@@ -1,0 +1,75 @@
+[
+    {
+        "benefit": {
+            "A": {
+                "current": "test1",
+                "enriched": "test",
+                "typeOfChange": 1
+            },
+            "B": {
+                "current": "test2",
+                "enriched": "test3",
+                "typeOfChange": 1
+            },
+            "CB": {
+                "current": "test4",
+                "enriched": "test5",
+                "typeOfChange": 1
+            },
+            "D": {
+                "X": {
+                    "current": "test1",
+                    "enriched": "test",
+                    "typeOfChange": 1
+                },
+                "Y": {
+                    "current": "test2",
+                    "enriched": "test3",
+                    "typeOfChange": 1
+                },
+                "Z": {
+                    "current": "test4",
+                    "enriched": "test5",
+                    "typeOfChange": 1
+                }
+            }
+        }
+    },
+    {
+        "benefit": {
+            "A": {
+                "current": "test1",
+                "enriched": "test",
+                "typeOfChange": 1
+            },
+            "EA": {
+                "current": "test2",
+                "enriched": "test3",
+                "typeOfChange": 1
+            },
+            "F": {
+                "current": "test4",
+                "enriched": "test5",
+                "typeOfChange": 1
+            },
+            "G": {
+                "X": {
+                    "current": "test1",
+                    "enriched": "test",
+                    "typeOfChange": 1
+                },
+                "Y": {
+                    "current": "test2",
+                    "enriched": "test3",
+                    "typeOfChange": 1
+                },
+                "Z": {
+                    "current": "test4",
+                    "enriched": "test5",
+                    "typeOfChange": 1
+                }
+            }
+        }
+    }
+    
+]
